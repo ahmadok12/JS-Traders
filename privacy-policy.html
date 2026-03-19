@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – JS Traders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --blue:#2196c4;--blue-dark:#1a6e96;--blue-light:#e8f5fc;
+      --navy:#0d2d3e;--white:#fff;--offwhite:#f7f9fb;
+      --text:#1e3040;--muted:#5a7080;--border:#d0e7f0;
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--white);line-height:1.7}
+
+    header{
+      background:var(--navy);padding:1rem 6%;
+      display:flex;align-items:center;justify-content:space-between;
+    }
+    header a{text-decoration:none}
+    header img{height:48px}
+    header nav a{
+      color:rgba(255,255,255,0.75);font-size:0.87rem;
+      text-decoration:none;margin-left:1.5rem;transition:color 0.2s;
+    }
+    header nav a:hover{color:#5ec9f0}
+
+    .page-hero{
+      background:linear-gradient(135deg,var(--navy) 0%,#1a4d68 100%);
+      padding:4rem 6% 3.5rem;text-align:center;
+    }
+    .page-hero .pill{
+      display:inline-block;background:rgba(33,150,196,0.2);
+      border:1px solid rgba(33,150,196,0.4);color:#7dd4ef;
+      font-size:0.72rem;letter-spacing:0.13em;text-transform:uppercase;
+      padding:0.28rem 0.85rem;border-radius:20px;margin-bottom:1rem;
+    }
+    .page-hero h1{
+      font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);
+      font-weight:700;color:#fff;margin-bottom:0.5rem;
+    }
+    .page-hero p{color:rgba(255,255,255,0.6);font-size:0.9rem}
+
+    .content{max-width:820px;margin:0 auto;padding:4rem 6%}
+
+    .toc{
+      background:var(--offwhite);border:1px solid var(--border);
+      border-radius:12px;padding:1.8rem 2rem;margin-bottom:3rem;
+    }
+    .toc h3{
+      font-family:'Cormorant Garamond',serif;font-size:1.2rem;
+      color:var(--navy);margin-bottom:1rem;
+    }
+    .toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:0.35rem}
+    .toc ol li a{color:var(--blue);text-decoration:none;font-size:0.9rem}
+    .toc ol li a:hover{text-decoration:underline}
+
+    .section{margin-bottom:3rem;scroll-margin-top:100px}
+    .section h2{
+      font-family:'Cormorant Garamond',serif;font-size:1.6rem;
+      font-weight:700;color:var(--navy);margin-bottom:0.8rem;
+      padding-bottom:0.5rem;border-bottom:2px solid var(--blue-light);
+    }
+    .section p{font-size:0.94rem;color:var(--muted);margin-bottom:0.9rem}
+    .section ul,.section ol{padding-left:1.3rem;margin-bottom:0.9rem;display:flex;flex-direction:column;gap:0.4rem}
+    .section ul li,.section ol li{font-size:0.93rem;color:var(--muted)}
+    .section strong{color:var(--text)}
+
+    .highlight-box{
+      background:var(--blue-light);border-left:3px solid var(--blue);
+      border-radius:0 8px 8px 0;padding:1rem 1.3rem;
+      margin:1rem 0;font-size:0.9rem;color:var(--navy);
+    }
+
+    .contact-box{
+      background:var(--navy);border-radius:12px;padding:2rem;
+      color:rgba(255,255,255,0.8);margin-top:2rem;
+    }
+    .contact-box h3{font-family:'Cormorant Garamond',serif;color:#fff;font-size:1.3rem;margin-bottom:0.8rem}
+    .contact-box p{font-size:0.9rem;margin-bottom:0.4rem}
+    .contact-box a{color:#5ec9f0;text-decoration:none}
+    .contact-box a:hover{text-decoration:underline}
+
+    footer{
+      background:#06161f;color:rgba(255,255,255,0.35);
+      text-align:center;padding:1.2rem;font-size:0.8rem;
+    }
+    footer a{color:rgba(255,255,255,0.5);text-decoration:none;margin:0 0.5rem}
+    footer a:hover{color:#5ec9f0}
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html"><img src="data:image/jpeg;base64,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" alt="JS Traders"/></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <span class="pill">Legal Document</span>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: June 1, 2025 &nbsp;·&nbsp; Effective: June 1, 2025</p>
+</div>
+
+<div class="content">
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#s1">Who We Are</a></li>
+      <li><a href="#s2">Information We Collect</a></li>
+      <li><a href="#s3">How We Use Your Information</a></li>
+      <li><a href="#s4">WhatsApp Messaging</a></li>
+      <li><a href="#s5">Information Sharing</a></li>
+      <li><a href="#s6">Data Retention</a></li>
+      <li><a href="#s7">Your Rights</a></li>
+      <li><a href="#s8">Data Security</a></li>
+      <li><a href="#s9">Children's Privacy</a></li>
+      <li><a href="#s10">Changes to This Policy</a></li>
+      <li><a href="#s11">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <div class="highlight-box">
+    This Privacy Policy explains how JS Traders collects, uses, and protects your personal information when you interact with us — including via our website and WhatsApp Business messaging service.
+  </div>
+
+  <div class="section" id="s1">
+    <h2>1. Who We Are</h2>
+    <p><strong>JS Traders</strong> is a poultry equipment supplier based in Okara, Pakistan, dealing in poultry feeding, drinking, and ventilation systems along with all related accessories.</p>
+    <p><strong>Business Address:</strong> 46, 47 – Power House Road, Ghalla Mandi, Okara, Pakistan 56300<br/>
+    <strong>Email:</strong> jstraders.okr@gmail.com<br/>
+    <strong>Phone:</strong> 0300 6950050</p>
+  </div>
+
+  <div class="section" id="s2">
+    <h2>2. Information We Collect</h2>
+    <p>We may collect the following types of personal information:</p>
+    <ul>
+      <li><strong>Contact information</strong> — your name, phone number, and email address when you fill in our contact form or reach out via WhatsApp.</li>
+      <li><strong>Message content</strong> — the content of messages you send us through WhatsApp or our website form, including inquiries, orders, and feedback.</li>
+      <li><strong>Business information</strong> — farm name, location, or product requirements you voluntarily share with us.</li>
+      <li><strong>Usage data</strong> — basic analytics such as pages visited and time spent on our website (no personally identifiable data is linked to this).</li>
+    </ul>
+    <p>We do <strong>not</strong> collect payment card details, passwords, or sensitive personal data.</p>
+  </div>
+
+  <div class="section" id="s3">
+    <h2>3. How We Use Your Information</h2>
+    <p>We use your personal information only for the following purposes:</p>
+    <ul>
+      <li>To respond to your inquiries and provide product information</li>
+      <li>To process and fulfil orders and related transactions</li>
+      <li>To send you transactional or service-related WhatsApp messages (e.g., order confirmations, delivery updates)</li>
+      <li>To improve our products, services, and customer experience</li>
+      <li>To comply with applicable laws and regulations</li>
+    </ul>
+    <p>We do <strong>not</strong> use your information for unsolicited marketing without your explicit consent.</p>
+  </div>
+
+  <div class="section" id="s4">
+    <h2>4. WhatsApp Messaging</h2>
+    <div class="highlight-box">
+      JS Traders uses the <strong>WhatsApp Business API</strong> (provided by Meta Platforms, Inc.) to communicate with customers. By messaging us on WhatsApp, you acknowledge and agree to the following:
+    </div>
+    <ul>
+      <li>Your WhatsApp phone number and messages are processed by Meta in accordance with <a href="https://www.whatsapp.com/legal/privacy-policy" style="color:var(--blue)">WhatsApp's Privacy Policy</a>.</li>
+      <li>We will only send you WhatsApp messages that are directly related to your inquiry, order, or a service you have requested.</li>
+      <li>We will never send you unsolicited promotional messages via WhatsApp without your prior opt-in consent.</li>
+      <li>You may opt out of WhatsApp communications at any time by replying <strong>STOP</strong> or by contacting us directly at jstraders.okr@gmail.com.</li>
+      <li>Message and data rates from your mobile carrier may apply.</li>
+    </ul>
+    <p>Our use of the WhatsApp Business API complies with Meta's <a href="https://www.whatsapp.com/legal/business-policy" style="color:var(--blue)">WhatsApp Business Policy</a> and applicable messaging guidelines.</p>
+  </div>
+
+  <div class="section" id="s5">
+    <h2>5. Information Sharing</h2>
+    <p>We do <strong>not</strong> sell, rent, or trade your personal information. We may share your data only in these limited circumstances:</p>
+    <ul>
+      <li><strong>Service providers:</strong> Trusted third-party platforms (such as Meta/WhatsApp for messaging, and web hosting providers) that help us operate our business, under strict confidentiality obligations.</li>
+      <li><strong>Legal requirements:</strong> If required by law, court order, or governmental authority.</li>
+      <li><strong>Business transfers:</strong> In the unlikely event of a merger or acquisition, your data may be transferred to the successor entity under the same privacy protections.</li>
+    </ul>
+  </div>
+
+  <div class="section" id="s6">
+    <h2>6. Data Retention</h2>
+    <p>We retain your personal information only for as long as necessary to fulfil the purposes outlined in this policy, or as required by law. Specifically:</p>
+    <ul>
+      <li>Contact form submissions are retained for up to <strong>12 months</strong> unless an ongoing business relationship requires longer retention.</li>
+      <li>WhatsApp message history is retained as long as the conversation thread is active or for up to <strong>12 months</strong> after the last interaction.</li>
+      <li>You may request deletion of your data at any time (see Section 7).</li>
+    </ul>
+  </div>
+
+  <div class="section" id="s7">
+    <h2>7. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> the personal information we hold about you</li>
+      <li><strong>Correct</strong> inaccurate or incomplete information</li>
+      <li><strong>Request deletion</strong> of your personal data</li>
+      <li><strong>Opt out</strong> of WhatsApp communications at any time by replying STOP</li>
+      <li><strong>Withdraw consent</strong> for any processing based on consent</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:jstraders.okr@gmail.com" style="color:var(--blue)">jstraders.okr@gmail.com</a>. We will respond within 30 days.</p>
+  </div>
+
+  <div class="section" id="s8">
+    <h2>8. Data Security</h2>
+    <p>We take reasonable steps to protect your personal information from unauthorized access, loss, misuse, or alteration. These measures include:</p>
+    <ul>
+      <li>Using secure, encrypted communication channels where available</li>
+      <li>Limiting access to personal data to authorized personnel only</li>
+      <li>Using reputable third-party platforms (Meta, WhatsApp Business API) with their own security standards</li>
+    </ul>
+    <p>However, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security.</p>
+  </div>
+
+  <div class="section" id="s9">
+    <h2>9. Children's Privacy</h2>
+    <p>Our services are intended for business customers and individuals aged <strong>18 and older</strong>. We do not knowingly collect personal information from children under 18. If you believe we have inadvertently collected such information, please contact us immediately.</p>
+  </div>
+
+  <div class="section" id="s10">
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. We will indicate the updated date at the top of this page. Continued use of our services after any changes constitutes your acceptance of the updated policy.</p>
+  </div>
+
+  <div class="section" id="s11">
+    <h2>11. Contact Us</h2>
+    <div class="contact-box">
+      <h3>Questions about your privacy?</h3>
+      <p>📧 <a href="mailto:jstraders.okr@gmail.com">jstraders.okr@gmail.com</a></p>
+      <p>📞 <a href="tel:+923006950050">0300 6950050</a></p>
+      <p>📍 46, 47 – Power House Road, Ghalla Mandi, Okara, Pakistan 56300</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span>© 2025 JS Traders · All rights reserved</span>
+  <a href="privacy-policy.html">Privacy Policy</a>
+  <a href="terms-of-service.html">Terms of Service</a>
+  <a href="index.html">Home</a>
+</footer>
+
+</body>
+</html>
